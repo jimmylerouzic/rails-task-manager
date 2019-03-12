@@ -1,0 +1,13 @@
+
+    <%= @task.title%>
+    <%= @task.details%>
+    <% if @task.completed = true %>
+      <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+      <label class="custom-control-label" for="defaultUnchecked">This task is completed yet!</label>
+     <% end %>
+
+
+<%= link_to "edit", edit_task_path %>
+<div class="back"><%= link_to "back to list", tasks_path %>
+</div>
+
